@@ -1,0 +1,1 @@
+http://mek.oszk.hu/08400/08435/08435.pdf feladatainak megoldása
