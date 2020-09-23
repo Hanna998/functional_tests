@@ -1,0 +1,567 @@
+hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ cargo build
+error: could not find `Cargo.toml` in `/home/hanna/Documents/Functional_test` or any parent directory
+hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ export PATH=$PATH:/path/to/directory/of/executable/downloaded/in/previous/step
+hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ ^C
+hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ export PATH=$PATH:/Documents/Functional_test
+hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ python selenium_I.py
+Traceback (most recent call last):
+  File "selenium_I.py", line 3, in <module>
+    browser = webdriver.Firefox()
+  File "/home/hanna/.local/lib/python2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/hanna/.local/lib/python2.7/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+
+XXXX hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ brew install geckodriver
+
+Command 'brew' not found, but can be installed with:
+
+sudo apt install linuxbrew-wrapper
+
+XXXX hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ sudo apt install linuxbrew-wrapper
+[sudo] password for hanna: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  curl fonts-lato libruby2.5 rake ruby ruby-did-you-mean ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.5 rubygems-integration
+Suggested packages:
+  ri ruby-dev bundler
+The following NEW packages will be installed:
+  curl fonts-lato libruby2.5 linuxbrew-wrapper rake ruby ruby-did-you-mean ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby-xmlrpc ruby2.5
+  rubygems-integration
+0 upgraded, 14 newly installed, 0 to remove and 14 not upgraded.
+Need to get 6.217 kB of archives.
+After this operation, 28,3 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://hu.archive.ubuntu.com/ubuntu cosmic/main amd64 fonts-lato all 2.0-2 [2.698 kB]
+Get:2 http://hu.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 curl amd64 7.61.0-1ubuntu2.2 [163 kB]
+Get:3 http://hu.archive.ubuntu.com/ubuntu cosmic/main amd64 rubygems-integration all 1.11 [4.994 B]
+Get:4 http://hu.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 ruby2.5 amd64 2.5.1-5ubuntu4.1 [48,7 kB]
+Get:5 http://hu.archive.ubuntu.com/ubuntu cosmic/main amd64 ruby amd64 1:2.5.1 [5.712 B]
+Get:6 http://hu.archive.ubuntu.com/ubuntu cosmic/main amd64 rake all 12.3.1-3 [44,9 kB]
+Get:7 http://hu.archive.ubuntu.com/ubuntu cosmic/main amd64 ruby-did-you-mean all 1.2.1-1 [9.828 B]
+Get:8 http://hu.archive.ubuntu.com/ubuntu cosmic/main amd64 ruby-minitest all 5.11.3-1 [39,4 kB]
+Get:9 http://hu.archive.ubuntu.com/ubuntu cosmic/main amd64 ruby-net-telnet all 0.1.1-2 [12,6 kB]
+Get:10 http://hu.archive.ubuntu.com/ubuntu cosmic/main amd64 ruby-power-assert all 1.1.1-1 [11,0 kB]
+Get:11 http://hu.archive.ubuntu.com/ubuntu cosmic/main amd64 ruby-test-unit all 3.2.8-1 [61,4 kB]
+Get:12 http://hu.archive.ubuntu.com/ubuntu cosmic/main amd64 ruby-xmlrpc all 0.3.0-2 [23,8 kB]
+Get:13 http://hu.archive.ubuntu.com/ubuntu cosmic-updates/main amd64 libruby2.5 amd64 2.5.1-5ubuntu4.1 [3.080 kB]
+Get:14 http://hu.archive.ubuntu.com/ubuntu cosmic/multiverse amd64 linuxbrew-wrapper all 20180904-1 [14,1 kB]
+Fetched 6.217 kB in 1s (6.392 kB/s)           
+Selecting previously unselected package fonts-lato.
+(Reading database ... 179450 files and directories currently installed.)
+Preparing to unpack .../00-fonts-lato_2.0-2_all.deb ...
+Unpacking fonts-lato (2.0-2) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../01-curl_7.61.0-1ubuntu2.2_amd64.deb ...
+Unpacking curl (7.61.0-1ubuntu2.2) ...
+Selecting previously unselected package rubygems-integration.
+Preparing to unpack .../02-rubygems-integration_1.11_all.deb ...
+Unpacking rubygems-integration (1.11) ...
+Selecting previously unselected package ruby2.5.
+Preparing to unpack .../03-ruby2.5_2.5.1-5ubuntu4.1_amd64.deb ...
+Unpacking ruby2.5 (2.5.1-5ubuntu4.1) ...
+Selecting previously unselected package ruby.
+Preparing to unpack .../04-ruby_1%3a2.5.1_amd64.deb ...
+Unpacking ruby (1:2.5.1) ...
+Selecting previously unselected package rake.
+Preparing to unpack .../05-rake_12.3.1-3_all.deb ...
+Unpacking rake (12.3.1-3) ...
+Selecting previously unselected package ruby-did-you-mean.
+Preparing to unpack .../06-ruby-did-you-mean_1.2.1-1_all.deb ...
+Unpacking ruby-did-you-mean (1.2.1-1) ...
+Selecting previously unselected package ruby-minitest.
+Preparing to unpack .../07-ruby-minitest_5.11.3-1_all.deb ...
+Unpacking ruby-minitest (5.11.3-1) ...
+Selecting previously unselected package ruby-net-telnet.
+Preparing to unpack .../08-ruby-net-telnet_0.1.1-2_all.deb ...
+Unpacking ruby-net-telnet (0.1.1-2) ...
+Selecting previously unselected package ruby-power-assert.
+Preparing to unpack .../09-ruby-power-assert_1.1.1-1_all.deb ...
+Unpacking ruby-power-assert (1.1.1-1) ...
+Selecting previously unselected package ruby-test-unit.
+Preparing to unpack .../10-ruby-test-unit_3.2.8-1_all.deb ...
+Unpacking ruby-test-unit (3.2.8-1) ...
+Selecting previously unselected package ruby-xmlrpc.
+Preparing to unpack .../11-ruby-xmlrpc_0.3.0-2_all.deb ...
+Unpacking ruby-xmlrpc (0.3.0-2) ...
+Selecting previously unselected package libruby2.5:amd64.
+Preparing to unpack .../12-libruby2.5_2.5.1-5ubuntu4.1_amd64.deb ...
+Unpacking libruby2.5:amd64 (2.5.1-5ubuntu4.1) ...
+Selecting previously unselected package linuxbrew-wrapper.
+Preparing to unpack .../13-linuxbrew-wrapper_20180904-1_all.deb ...
+Unpacking linuxbrew-wrapper (20180904-1) ...
+Setting up ruby-xmlrpc (0.3.0-2) ...
+Setting up curl (7.61.0-1ubuntu2.2) ...
+Setting up fonts-lato (2.0-2) ...
+Setting up ruby-did-you-mean (1.2.1-1) ...
+Processing triggers for libc-bin (2.28-0ubuntu1) ...
+Setting up ruby-net-telnet (0.1.1-2) ...
+Setting up rubygems-integration (1.11) ...
+Processing triggers for man-db (2.8.4-2) ...
+Setting up ruby-minitest (5.11.3-1) ...
+Processing triggers for fontconfig (2.13.0-5ubuntu3) ...
+Setting up ruby-power-assert (1.1.1-1) ...
+Setting up ruby-test-unit (3.2.8-1) ...
+Setting up rake (12.3.1-3) ...
+Setting up libruby2.5:amd64 (2.5.1-5ubuntu4.1) ...
+Setting up ruby2.5 (2.5.1-5ubuntu4.1) ...
+Setting up ruby (1:2.5.1) ...
+Setting up linuxbrew-wrapper (20180904-1) ...
+Processing triggers for libc-bin (2.28-0ubuntu1) ...
+XXXX   hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ brew install geckodriver
+==> This script will install:
+/home/linuxbrew/.linuxbrew/bin/brew
+/home/linuxbrew/.linuxbrew/share/doc/homebrew
+/home/linuxbrew/.linuxbrew/share/man/man1/brew.1
+/home/linuxbrew/.linuxbrew/share/zsh/site-functions/_brew
+/home/linuxbrew/.linuxbrew/etc/bash_completion.d/brew
+/home/hanna/.cache/Homebrew/
+/home/linuxbrew/.linuxbrew/Homebrew
+==> The following new directories will be created:
+/home/linuxbrew/.linuxbrew/Cellar
+/home/linuxbrew/.linuxbrew/Homebrew
+/home/linuxbrew/.linuxbrew/bin
+/home/linuxbrew/.linuxbrew/etc
+/home/linuxbrew/.linuxbrew/include
+/home/linuxbrew/.linuxbrew/lib
+/home/linuxbrew/.linuxbrew/opt
+/home/linuxbrew/.linuxbrew/sbin
+/home/linuxbrew/.linuxbrew/share
+/home/linuxbrew/.linuxbrew/share/zsh
+/home/linuxbrew/.linuxbrew/share/zsh/site-functions
+/home/linuxbrew/.linuxbrew/var
+
+Press RETURN to continue or any other key to abort
+==> /usr/bin/sudo /bin/mkdir -p /home/linuxbrew/.linuxbrew
+==> /usr/bin/sudo /bin/chown hanna:hanna /home/linuxbrew/.linuxbrew
+==> /usr/bin/sudo /bin/mkdir -p /home/linuxbrew/.linuxbrew/Cellar /home/linuxbrew/.linuxbrew/Homebrew /home/linuxbrew/.linuxbrew/bin /home/linuxbrew/.linuxbrew/etc /home/linuxbrew/.linuxbrew/include /home/linuxbrew/.linuxbrew/lib /home/linuxbrew/.linuxbrew/opt /home/linuxbrew/.linuxbrew/sbin /home/linuxbrew/.linuxbrew/share /home/linuxbrew/.linuxbrew/share/zsh /home/linuxbrew/.linuxbrew/share/zsh/site-functions /home/linuxbrew/.linuxbrew/var
+==> /usr/bin/sudo /bin/chmod g+rwx /home/linuxbrew/.linuxbrew/Cellar /home/linuxbrew/.linuxbrew/Homebrew /home/linuxbrew/.linuxbrew/bin /home/linuxbrew/.linuxbrew/etc /home/linuxbrew/.linuxbrew/include /home/linuxbrew/.linuxbrew/lib /home/linuxbrew/.linuxbrew/opt /home/linuxbrew/.linuxbrew/sbin /home/linuxbrew/.linuxbrew/share /home/linuxbrew/.linuxbrew/share/zsh /home/linuxbrew/.linuxbrew/share/zsh/site-functions /home/linuxbrew/.linuxbrew/var
+==> /usr/bin/sudo /bin/chmod 755 /home/linuxbrew/.linuxbrew/share/zsh /home/linuxbrew/.linuxbrew/share/zsh/site-functions
+==> /usr/bin/sudo /bin/chown hanna /home/linuxbrew/.linuxbrew/Cellar /home/linuxbrew/.linuxbrew/Homebrew /home/linuxbrew/.linuxbrew/bin /home/linuxbrew/.linuxbrew/etc /home/linuxbrew/.linuxbrew/include /home/linuxbrew/.linuxbrew/lib /home/linuxbrew/.linuxbrew/opt /home/linuxbrew/.linuxbrew/sbin /home/linuxbrew/.linuxbrew/share /home/linuxbrew/.linuxbrew/share/zsh /home/linuxbrew/.linuxbrew/share/zsh/site-functions /home/linuxbrew/.linuxbrew/var
+==> /usr/bin/sudo /bin/chgrp hanna /home/linuxbrew/.linuxbrew/Cellar /home/linuxbrew/.linuxbrew/Homebrew /home/linuxbrew/.linuxbrew/bin /home/linuxbrew/.linuxbrew/etc /home/linuxbrew/.linuxbrew/include /home/linuxbrew/.linuxbrew/lib /home/linuxbrew/.linuxbrew/opt /home/linuxbrew/.linuxbrew/sbin /home/linuxbrew/.linuxbrew/share /home/linuxbrew/.linuxbrew/share/zsh /home/linuxbrew/.linuxbrew/share/zsh/site-functions /home/linuxbrew/.linuxbrew/var
+==> /usr/bin/sudo /bin/mkdir -p /home/hanna/.cache/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /home/hanna/.cache/Homebrew
+==> /usr/bin/sudo /bin/chown hanna /home/hanna/.cache/Homebrew
+==> /usr/bin/sudo /bin/chgrp hanna /home/hanna/.cache/Homebrew
+==> Downloading and installing Linuxbrew...
+remote: Enumerating objects: 2341, done.
+remote: Counting objects: 100% (2341/2341), done.
+remote: Compressing objects: 100% (1170/1170), done.
+remote: Total 127392 (delta 1322), reused 1845 (delta 1090), pack-reused 125051
+Receiving objects: 100% (127392/127392), 29.77 MiB | 8.45 MiB/s, done.
+Resolving deltas: 100% (93032/93032), done.
+From https://github.com/Linuxbrew/brew
+ * [new branch]          master     -> origin/master
+ * [new tag]             1.0.0      -> 1.0.0
+ * [new tag]             1.0.1      -> 1.0.1
+ * [new tag]             1.0.2      -> 1.0.2
+ * [new tag]             1.0.3      -> 1.0.3
+ * [new tag]             1.0.4      -> 1.0.4
+ * [new tag]             1.0.5      -> 1.0.5
+ * [new tag]             1.0.6      -> 1.0.6
+ * [new tag]             1.0.7      -> 1.0.7
+ * [new tag]             1.0.8      -> 1.0.8
+ * [new tag]             1.0.9      -> 1.0.9
+ * [new tag]             1.1.0      -> 1.1.0
+ * [new tag]             1.1.0.1    -> 1.1.0.1
+ * [new tag]             1.1.1      -> 1.1.1
+ * [new tag]             1.1.10     -> 1.1.10
+ * [new tag]             1.1.11     -> 1.1.11
+ * [new tag]             1.1.12     -> 1.1.12
+ * [new tag]             1.1.13     -> 1.1.13
+ * [new tag]             1.1.2      -> 1.1.2
+ * [new tag]             1.1.2.1    -> 1.1.2.1
+ * [new tag]             1.1.3      -> 1.1.3
+ * [new tag]             1.1.4      -> 1.1.4
+ * [new tag]             1.1.5      -> 1.1.5
+ * [new tag]             1.1.6      -> 1.1.6
+ * [new tag]             1.1.7      -> 1.1.7
+ * [new tag]             1.1.8      -> 1.1.8
+ * [new tag]             1.1.9      -> 1.1.9
+ * [new tag]             1.2.0      -> 1.2.0
+ * [new tag]             1.2.1      -> 1.2.1
+ * [new tag]             1.2.2      -> 1.2.2
+ * [new tag]             1.2.3      -> 1.2.3
+ * [new tag]             1.2.4      -> 1.2.4
+ * [new tag]             1.2.5      -> 1.2.5
+ * [new tag]             1.2.6      -> 1.2.6
+ * [new tag]             1.2.7      -> 1.2.7
+ * [new tag]             1.2.8      -> 1.2.8
+ * [new tag]             1.3.0      -> 1.3.0
+ * [new tag]             1.3.1      -> 1.3.1
+ * [new tag]             1.3.2      -> 1.3.2
+ * [new tag]             1.3.3      -> 1.3.3
+ * [new tag]             1.3.4      -> 1.3.4
+ * [new tag]             1.3.5      -> 1.3.5
+ * [new tag]             1.3.6      -> 1.3.6
+ * [new tag]             1.3.7      -> 1.3.7
+ * [new tag]             1.3.8      -> 1.3.8
+ * [new tag]             1.3.9      -> 1.3.9
+ * [new tag]             1.4.0      -> 1.4.0
+ * [new tag]             1.4.1      -> 1.4.1
+ * [new tag]             1.4.2      -> 1.4.2
+ * [new tag]             1.4.3      -> 1.4.3
+ * [new tag]             1.5.0      -> 1.5.0
+ * [new tag]             1.5.1      -> 1.5.1
+ * [new tag]             1.5.10     -> 1.5.10
+ * [new tag]             1.5.11     -> 1.5.11
+...
+ * [new tag]             1.9.1      -> 1.9.1
+ * [new tag]             1.9.2      -> 1.9.2
+HEAD is now at 6613974e7 Merge tag Homebrew/1.9.2 into Linuxbrew/master
+==> Linuxbrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Linuxbrew/brew#donations
+==> Tapping homebrew/core
+Cloning into '/home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/homebrew/homebrew-core'...
+remote: Enumerating objects: 4954, done.
+remote: Counting objects: 100% (4954/4954), done.
+remote: Compressing objects: 100% (4755/4755), done.
+remote: Total 4954 (delta 50), reused 326 (delta 6), pack-reused 0
+Receiving objects: 100% (4954/4954), 4.21 MiB | 3.51 MiB/s, done.
+Resolving deltas: 100% (50/50), done.
+Tapped 3 commands and 4734 formulae (4,995 files, 13.1MB).
+Already up-to-date.
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate user behaviour analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics.html
+
+==> Next steps:
+- Install the Linuxbrew dependencies if you have sudo access:
+  Debian, Ubuntu, etc.
+    sudo apt-get install build-essential
+  Fedora, Red Hat, CentOS, etc.
+    sudo yum groupinstall 'Development Tools'
+  See http://linuxbrew.sh/#dependencies for more information.
+- Add Linuxbrew to your ~/.profile by running
+    echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >>~/.profile
+    echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/.profile
+    echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.profile
+- Add Linuxbrew to your PATH
+    PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+- We recommend that you install GCC by running:
+    brew install gcc
+- After modifying your shell profile, you may need to restart your session
+  (logout and then log back in) if the brew command isn't found.
+- Run `brew help` to get started
+- Further documentation: 
+    https://docs.brew.sh
+Warning: /home/linuxbrew/.linuxbrew/bin is not in your PATH.
+/usr/bin/brew: 78: exec: /home/hanna/.linuxbrew/bin/brew: not found
+hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ python selenium_I.py
+Traceback (most recent call last):
+  File "selenium_I.py", line 3, in <module>
+    browser = webdriver.Firefox()
+  File "/home/hanna/.local/lib/python2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/hanna/.local/lib/python2.7/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+
+hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ cd --
+hanna@hanna-LIFEBOOK-S782:~$ cd Downloads
+hanna@hanna-LIFEBOOK-S782:~/Downloads$ tar -xvzf geckodriver*
+tar: geckodriver-v0.23.0-linux64.tar.gz: Not found in archive
+tar: Exiting with failure status due to previous errors
+hanna@hanna-LIFEBOOK-S782:~/Downloads$ ls -la
+total 38052
+drwxr-xr-x  2 hanna hanna     4096 jan   17 16:35 .
+drwxr-xr-x 25 hanna hanna     4096 jan   17 11:45 ..
+-rw-rw-r--  1 hanna hanna 20534887 jan   16 10:24 1PA_mechanics.zip
+-rw-rw-r--  1 hanna hanna    33951 jan    9 09:51 alf_netd.doctree
+-rw-rw-r--  1 hanna hanna    98250 jan    9 12:13 DownloadFile.jpeg
+-rw-rw-r--  1 hanna hanna  3744454 jan   17 16:17 geckodriver-v0.23.0-arm7hf.tar.gz
+-rw-rw-r--  1 hanna hanna  3876109 jan   17 16:35 geckodriver-v0.23.0-linux64.tar.gz
+-rw-rw-r--  1 hanna hanna      949 jan    9 09:51 ldap.cpython-37.pyc
+-rw-rw-r--  1 hanna hanna 10649948 jan   17 15:56 selenium-server-standalone-3.141.59.jar
+hanna@hanna-LIFEBOOK-S782:~/Downloads$ chmod +x geckodriver
+chmod: cannot access 'geckodriver': No such file or directory
+hanna@hanna-LIFEBOOK-S782:~/Downloads$ tar -xvzf geckodriver*
+tar: geckodriver-v0.23.0-linux64.tar.gz: Not found in archive
+tar: Exiting with failure status due to previous errors
+hanna@hanna-LIFEBOOK-S782:~/Downloads$ tar -xvzf geckodriver*
+tar: geckodriver-v0.23.0-linux64.tar.gz: Not found in archive
+tar: Exiting with failure status due to previous errors
+hanna@hanna-LIFEBOOK-S782:~/Downloads$ wget https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-linux64.tar.gz
+--2019-01-17 16:38:32--  https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-linux64.tar.gz
+Connecting to 172.27.4.254:3128... connected.
+Proxy request sent, awaiting response... 302 Found
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/25354393/56b651a0-663e-11e7-9628-f94e0ded1035?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190117%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190117T153832Z&X-Amz-Expires=300&X-Amz-Signature=0d171ef81db7d64253ed699c6cbfe1220b9fdf685bb750bac9426803c0f96049&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dgeckodriver-v0.18.0-linux64.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2019-01-17 16:38:32--  https://github-production-release-asset-2e65be.s3.amazonaws.com/25354393/56b651a0-663e-11e7-9628-f94e0ded1035?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190117%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190117T153832Z&X-Amz-Expires=300&X-Amz-Signature=0d171ef81db7d64253ed699c6cbfe1220b9fdf685bb750bac9426803c0f96049&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dgeckodriver-v0.18.0-linux64.tar.gz&response-content-type=application%2Foctet-stream
+Connecting to 172.27.4.254:3128... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: 2260781 (2,2M) [application/octet-stream]
+Saving to: ‘geckodriver-v0.18.0-linux64.tar.gz’
+
+geckodriver-v0.18.0-linux64.tar.gz        100%[=====================================================================================>]   2,16M  2,25MB/s    in 1,0s    
+
+2019-01-17 16:38:34 (2,25 MB/s) - ‘geckodriver-v0.18.0-linux64.tar.gz’ saved [2260781/2260781]
+
+hanna@hanna-LIFEBOOK-S782:~/Downloads$ l
+geckodriver-v0.18.0-linux64.tar.gz
+hanna@hanna-LIFEBOOK-S782:~/Downloads$ ls -la
+total 2220
+drwxr-xr-x  2 hanna hanna    4096 jan   17 16:38 .
+drwxr-xr-x 25 hanna hanna    4096 jan   17 11:45 ..
+-rw-r--r--  1 hanna hanna 2260781 júl   11  2017 geckodriver-v0.18.0-linux64.tar.gz
+hanna@hanna-LIFEBOOK-S782:~/Downloads$ rm geckodriver-v0.18.0-linux64.tar.gz 
+hanna@hanna-LIFEBOOK-S782:~/Downloads$ tar -xvzf geckodriver*
+geckodriver
+hanna@hanna-LIFEBOOK-S782:~/Downloads$ cd ..
+hanna@hanna-LIFEBOOK-S782:~$ cd Drivers/
+hanna@hanna-LIFEBOOK-S782:~/Drivers$ chmod +x geckodriver
+hanna@hanna-LIFEBOOK-S782:~/Drivers$ echo $path
+
+hanna@hanna-LIFEBOOK-S782:~/Drivers$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/path-to-extracted-file/geckodriver:/path/to/directory/of/executable/downloaded/in/previous/step:/path/to/directory/of/executable/downloaded/in/previous/step:/Documents/Functional_test
+hanna@hanna-LIFEBOOK-S782:~/Drivers$ export PATH=$PATH:/~/Drivers
+hanna@hanna-LIFEBOOK-S782:~/Drivers$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/path-to-extracted-file/geckodriver:/path/to/directory/of/executable/downloaded/in/previous/step:/path/to/directory/of/executable/downloaded/in/previous/step:/Documents/Functional_test:/~/Drivers
+hanna@hanna-LIFEBOOK-S782:~/Drivers$ export PATH=$PATH:/home/hanna/Drivers/geckodriver
+hanna@hanna-LIFEBOOK-S782:~/Drivers$ cd ..
+hanna@hanna-LIFEBOOK-S782:~$ cd Documents
+hanna@hanna-LIFEBOOK-S782:~/Documents$ cd Functional_test
+hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ python selenium_I.py 
+Traceback (most recent call last):
+  File "selenium_I.py", line 3, in <module>
+    browser = webdriver.Firefox()
+  File "/home/hanna/.local/lib/python2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/hanna/.local/lib/python2.7/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/usr/lib/python2.7/subprocess.py", line 394, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1047, in _execute_child
+    raise child_exception
+OSError: [Errno 20] Not a directory
+hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ pip freeze
+asn1crypto==0.24.0
+atomicwrites==1.1.5
+attrs==17.4.0
+configparser==3.5.0b2
+cryptography==2.3
+entrypoints==0.2.3.post3
+enum34==1.1.6
+funcsigs==1.0.2
+idna==2.6
+ipaddress==1.0.17
+keyring==15.1.0
+keyrings.alt==3.1
+mock==2.0.0
+more-itertools==4.2.0
+pbr==4.2.0
+pluggy==0.6.0
+py==1.6.0
+pycrypto==2.6.1
+PyGObject==3.30.1
+pytest==3.6.4
+pyxdg==0.25
+SecretStorage==2.3.1
+selenium==3.141.0
+six==1.11.0
+urllib3==1.24.1
+hanna@hanna-LIFEBOOK-S782:~/Documents/Functional_test$ cd ..
+hanna@hanna-LIFEBOOK-S782:~/Documents$ cd ..
+hanna@hanna-LIFEBOOK-S782:~$ mkdir Projects
+hanna@hanna-LIFEBOOK-S782:~$ git clone https://github.com/hjwp/book-example.git
+Cloning into 'book-example'...
+remote: Enumerating objects: 16047, done.
+remote: Total 16047 (delta 0), reused 0 (delta 0), pack-reused 16047
+Receiving objects: 100% (16047/16047), 2.81 MiB | 4.26 MiB/s, done.
+Resolving deltas: 100% (9691/9691), done.
+hanna@hanna-LIFEBOOK-S782:~$ ls -la
+total 160
+drwxr-xr-x 28 hanna hanna 4096 jan   17 16:57 .
+drwxr-xr-x  4 root  root  4096 jan   17 16:31 ..
+drwx------  3 hanna hanna 4096 jan   17 11:17 .adobe
+-rw-------  1 hanna hanna 2379 jan   16 19:02 .bash_history
+-rw-r--r--  1 hanna hanna  220 jan    7 09:52 .bash_logout
+-rw-r--r--  1 hanna hanna 3771 jan    7 09:52 .bashrc
+drwxr-xr-x  8 hanna hanna 4096 jan   17 16:57 book-example
+drwx------ 21 hanna hanna 4096 jan   17 16:40 .cache
+drwx------ 16 hanna hanna 4096 jan   15 10:38 .config
+drwxr-xr-x  2 hanna hanna 4096 jan    9 14:56 Desktop
+drwxr-xr-x  7 hanna hanna 4096 jan   17 12:33 Documents
+drwxr-xr-x  2 hanna hanna 4096 jan   17 16:40 Downloads
+drwxr-xr-x  2 hanna hanna 4096 jan   17 16:40 Drivers
+-rw-r--r--  1 hanna hanna 8980 jan    7 09:52 examples.desktop
+-rw-r--r--  1 hanna hanna   54 jan   17 11:13 .gitconfig
+drwx------  3 hanna hanna 4096 jan    7 11:15 .gnupg
+-rw-------  1 hanna hanna 3330 jan   17 09:07 .ICEauthority
+drwxrwxr-x  4 hanna hanna 4096 jan    7 10:15 .java
+-rw-------  1 hanna hanna   34 jan   15 16:02 .lesshst
+drwx------  4 hanna hanna 4096 jan   17 13:18 .local
+drwx------  3 hanna hanna 4096 jan   17 11:17 .macromedia
+drwx------  5 hanna hanna 4096 jan    7 10:51 .mozilla
+drwxr-xr-x  2 hanna hanna 4096 jan    7 10:00 Music
+drwxr-xr-x  2 hanna hanna 4096 jan   17 11:12 Pictures
+-rw-r--r--  1 hanna hanna  807 jan    7 09:52 .profile
+drwxr-xr-x  2 hanna hanna 4096 jan   17 16:57 Projects
+drwxr-xr-x  2 hanna hanna 4096 jan    7 10:00 Public
+drwxrwxr-x  4 hanna hanna 4096 jan    7 10:14 .PyCharmCE2018.3
+drwxrwxr-x  3 hanna hanna 4096 jan    7 10:24 PycharmProjects
+drwxr-xr-x  3 hanna hanna 4096 jan   15 10:30 .pytest_cache
+drwxr-xr-x  3 hanna hanna 4096 jan   17 09:36 python-environments
+-rw-------  1 hanna hanna 1887 jan    7 14:28 .python_history
+drwxr-xr-x  5 hanna hanna 4096 jan    7 16:23 snap
+drwx------  2 hanna hanna 4096 jan    7 11:15 .ssh
+-rw-r--r--  1 hanna hanna    0 jan    8 09:13 .sudo_as_admin_successful
+drwxr-xr-x  2 hanna hanna 4096 jan    7 10:00 Templates
+drwx------  5 hanna hanna 4096 jan    8 12:27 .thunderbird
+drwxr-xr-x  2 hanna hanna 4096 jan    7 10:00 Videos
+-rw-r--r--  1 hanna hanna  165 jan   17 16:38 .wget-hsts
+XXXX hanna@hanna-LIFEBOOK-S782:~$ cd Projects/
+XXXX hanna@hanna-LIFEBOOK-S782:~/Projects$ cd ..
+XXXX hanna@hanna-LIFEBOOK-S782:~$ cd 
+.adobe/              Desktop/             .gnupg/              .mozilla/            Public/              python-environments/ .thunderbird/
+book-example/        Documents/           .java/               Music/               .PyCharmCE2018.3/    snap/                Videos/
+.cache/              Downloads/           .local/              Pictures/            PycharmProjects/     .ssh/                
+.config/             Drivers/             .macromedia/         Projects/            .pytest_cache/       Templates/           
+hanna@hanna-LIFEBOOK-S782:~$ cd 
+.adobe/              Desktop/             .gnupg/              .mozilla/            Public/              python-environments/ .thunderbird/
+book-example/        Documents/           .java/               Music/               .PyCharmCE2018.3/    snap/                Videos/
+.cache/              Downloads/           .local/              Pictures/            PycharmProjects/     .ssh/                
+.config/             Drivers/             .macromedia/         Projects/            .pytest_cache/       Templates/           
+XXXX hanna@hanna-LIFEBOOK-S782:~$ cd Projects/
+XXXX hanna@hanna-LIFEBOOK-S782:~/Projects$ dir
+XXXX hanna@hanna-LIFEBOOK-S782:~/Projects$ ls -la
+total 8
+drwxr-xr-x  2 hanna hanna 4096 jan   17 16:57 .
+drwxr-xr-x 28 hanna hanna 4096 jan   17 16:57 ..
+XXXX hanna@hanna-LIFEBOOK-S782:~/Projects$ git clone https://github.com/hjwp/book-example.git
+Cloning into 'book-example'...
+remote: Enumerating objects: 16047, done.
+remote: Total 16047 (delta 0), reused 0 (delta 0), pack-reused 16047
+Receiving objects: 100% (16047/16047), 2.81 MiB | 2.05 MiB/s, done.
+Resolving deltas: 100% (9691/9691), done.
+XXXX hanna@hanna-LIFEBOOK-S782:~/Projects$ cd ..
+XXXX XXXX hanna@hanna-LIFEBOOK-S782:~$ rm -rf book-example/
+XXXX hanna@hanna-LIFEBOOK-S782:~$ cd Projects/
+XXXX hanna@hanna-LIFEBOOK-S782:~/Projects$ dir
+book-example
+XXXX hanna@hanna-LIFEBOOK-S782:~/Projects$ cd book
+bash: cd: book: No such file or directory
+hanna@hanna-LIFEBOOK-S782:~/Projects$ cd book-example/
+hanna@hanna-LIFEBOOK-S782:~/Projects/book-example$ dir
+accounts  deploy_tools	functional_tests  LICENSE  lists  manage.py  README.md	requirements.txt  superlists
+hanna@hanna-LIFEBOOK-S782:~/Projects/book-example$ virtualenv -p python3 virtualenv
+Already using interpreter /usr/bin/python3
+Using base prefix '/usr'
+New python executable in /home/hanna/Projects/book-example/virtualenv/bin/python3
+Also creating executable in /home/hanna/Projects/book-example/virtualenv/bin/python
+Installing setuptools, pkg_resources, pip, wheel...done.
+hanna@hanna-LIFEBOOK-S782:~/Projects/book-example$ source virtualenv/bin/activate
+(virtualenv) hanna@hanna-LIFEBOOK-S782:~/Projects/book-example$ pip install django==1.11
+Collecting django==1.11
+  Downloading https://files.pythonhosted.org/packages/47/a6/078ebcbd49b19e22fd560a2348cfc5cec9e5dcfe3c4fad8e64c9865135bb/Django-1.11-py2.py3-none-any.whl (6.9MB)
+    100% |████████████████████████████████| 6.9MB 5.4MB/s 
+Collecting pytz (from django==1.11)
+  Using cached https://files.pythonhosted.org/packages/61/28/1d3920e4d1d50b19bc5d24398a7cd85cc7b9a75a490570d5a30c57622d34/pytz-2018.9-py2.py3-none-any.whl
+Installing collected packages: pytz, django
+pip iSuccessfully installed django-1.11 pytz-2018.9
+^CTraceback (most recent call last):
+  File "/home/hanna/Projects/book-example/virtualenv/bin/pip", line 11, in <module>
+    sys.exit(main())
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/pip/_internal/__init__.py", line 78, in main
+    return command.main(cmd_args)
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/pip/_internal/cli/base_command.py", line 184, in main
+    timeout=min(5, options.timeout)
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/pip/_internal/cli/base_command.py", line 79, in _build_session
+    insecure_hosts=options.trusted_hosts,
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/pip/_internal/download.py", line 337, in __init__
+    self.headers["User-Agent"] = user_agent()
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/pip/_internal/download.py", line 126, in user_agent
+    setuptools_version = get_installed_version("setuptools")
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/pip/_internal/utils/misc.py", line 836, in get_installed_version
+    working_set = pkg_resources.WorkingSet()
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/pip/_vendor/pkg_resources/__init__.py", line 562, in __init__
+    self.add_entry(entry)
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/pip/_vendor/pkg_resources/__init__.py", line 618, in add_entry
+    for dist in find_distributions(entry, True):
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/pip/_vendor/pkg_resources/__init__.py", line 1965, in find_on_path
+    for dist in factory(fullpath):
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2034, in distributions_from_metadata
+    yield Distribution.from_location(
+KeyboardInterrupt
+(virtualenv) hanna@hanna-LIFEBOOK-S782:~/Projects/book-example$ pip install -r requirements.txt 
+Requirement already satisfied: django==1.11 in ./virtualenv/lib/python3.6/site-packages (from -r requirements.txt (line 1)) (1.11)
+Collecting gunicorn==19.7.1 (from -r requirements.txt (line 2))
+  Downloading https://files.pythonhosted.org/packages/64/32/becbd4089a4c06f0f9f538a76e9fe0b19a08f010bcb47dcdbfbc640cdf7d/gunicorn-19.7.1-py2.py3-none-any.whl (111kB)
+    100% |████████████████████████████████| 112kB 1.4MB/s 
+Collecting djangorestframework==3.6.2 (from -r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/d2/79/e68b85647c539a155c6f6a0738208eb5ed09c61adabfd6f2e6edde944529/djangorestframework-3.6.2-py2.py3-none-any.whl (1.3MB)
+    100% |████████████████████████████████| 1.3MB 16.6MB/s 
+Requirement already satisfied: pytz in ./virtualenv/lib/python3.6/site-packages (from django==1.11->-r requirements.txt (line 1)) (2018.9)
+Installing collected packages: gunicorn, djangorestframework
+Successfully installed djangorestframework-3.6.2 gunicorn-19.7.1
+XXXX (virtualenv) hanna@hanna-LIFEBOOK-S782:~/Projects/book-example$ ls -la
+total 56
+drwxr-xr-x 9 hanna hanna 4096 jan   17 16:58 .
+drwxr-xr-x 3 hanna hanna 4096 jan   17 16:58 ..
+drwxr-xr-x 4 hanna hanna 4096 jan   17 16:58 accounts
+drwxr-xr-x 2 hanna hanna 4096 jan   17 16:58 deploy_tools
+drwxr-xr-x 3 hanna hanna 4096 jan   17 16:58 functional_tests
+drwxr-xr-x 8 hanna hanna 4096 jan   17 16:58 .git
+-rw-r--r-- 1 hanna hanna   94 jan   17 16:58 .gitignore
+-rw-r--r-- 1 hanna hanna  245 jan   17 16:58 LICENSE
+drwxr-xr-x 6 hanna hanna 4096 jan   17 16:58 lists
+-rwxr-xr-x 1 hanna hanna  808 jan   17 16:58 manage.py
+-rw-r--r-- 1 hanna hanna 3493 jan   17 16:58 README.md
+-rw-r--r-- 1 hanna hanna   57 jan   17 16:58 requirements.txt
+drwxr-xr-x 2 hanna hanna 4096 jan   17 16:58 superlists
+drwxr-xr-x 6 hanna hanna 4096 jan   17 16:58 virtualenv
+(virtualenv) hanna@hanna-LIFEBOOK-S782:~/Projects/book-example$ python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 20 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): accounts, auth, contenttypes, lists, sessions.
+Run 'python manage.py migrate' to apply them.
+
+January 17, 2019 - 15:59:57
+Django version 1.11, using settings 'superlists.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+"GET / HTTP/1.1" 200 2291
+"GET /static/base.css HTTP/1.1" 200 34
+"GET /static/list.js HTTP/1.1" 200 1359
+"GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 117305
+"GET /static/jquery-3.1.1.min.js HTTP/1.1" 200 86709
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2296
+Internal Server Error: /lists/new
+Traceback (most recent call last):
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: lists_list
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hanna/Projects/book-example/virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+...
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: lists_list
+"POST /lists/new HTTP/1.1" 500 157602
+^C(virtualenv) hanna@hanna-LIFEBOOK-S782:~/Projects/book-example$ python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 20 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): accounts, auth, contenttypes, lists, sessions.
+Run 'python manage.py migrate' to apply them.
+
+January 17, 2019 - 16:00:56
+Django version 1.11, using settings 'superlists.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+
+

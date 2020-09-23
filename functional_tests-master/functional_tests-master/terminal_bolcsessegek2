@@ -1,0 +1,141 @@
+hanna@hanna-LIFEBOOK-S782:~$ cd Projects/
+book-example/      obey-testing-goat/ 
+hanna@hanna-LIFEBOOK-S782:~$ cd Projects/obey-testing-goat/
+hanna@hanna-LIFEBOOK-S782:~/Projects/obey-testing-goat$ source virtualenv/bin/activate
+(virtualenv) hanna@hanna-LIFEBOOK-S782:~/Projects/obey-testing-goat$ python functional_tests.py 
+E
+======================================================================
+ERROR: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hanna/Projects/obey-testing-goat/virtualenv/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/usr/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'geckodriver': 'geckodriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "functional_tests.py", line 9, in setUp
+    self.browser = webdriver.Firefox()
+  File "/home/hanna/Projects/obey-testing-goat/virtualenv/lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/hanna/Projects/obey-testing-goat/virtualenv/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+FAILED (errors=1)
+(virtualenv) hanna@hanna-LIFEBOOK-S782:~/Projects/obey-testing-goat$ python functional_tests.py 
+E
+======================================================================
+ERROR: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hanna/Projects/obey-testing-goat/virtualenv/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/usr/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'geckodriver': 'geckodriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "functional_tests.py", line 9, in setUp
+    self.browser = webdriver.Firefox()
+  File "/home/hanna/Projects/obey-testing-goat/virtualenv/lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/hanna/Projects/obey-testing-goat/virtualenv/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.005s
+
+FAILED (errors=1)
+(virtualenv) hanna@hanna-LIFEBOOK-S782:~/Projects/obey-testing-goat$ deactivate 
+hanna@hanna-LIFEBOOK-S782:~/Projects/obey-testing-goat$ source virtualenv/bin/activate
+(virtualenv) hanna@hanna-LIFEBOOK-S782:~/Projects/obey-testing-goat$ python functional_tests.py 
+E
+======================================================================
+ERROR: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hanna/Projects/obey-testing-goat/virtualenv/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/usr/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'geckodriver': 'geckodriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "functional_tests.py", line 9, in setUp
+    self.browser = webdriver.Firefox()
+  File "/home/hanna/Projects/obey-testing-goat/virtualenv/lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/hanna/Projects/obey-testing-goat/virtualenv/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.005s
+
+FAILED (errors=1)
+(virtualenv) hanna@hanna-LIFEBOOK-S782:~/Projects/obey-testing-goat$ python functional_tests.py 
+E
+======================================================================
+ERROR: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hanna/Projects/obey-testing-goat/virtualenv/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/usr/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'geckodriver': 'geckodriver'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "functional_tests.py", line 9, in setUp
+    self.browser = webdriver.Firefox()
+  File "/home/hanna/Projects/obey-testing-goat/virtualenv/lib/python3.6/site-packages/selenium/webdriver/firefox/webdriver.py", line 164, in __init__
+    self.service.start()
+  File "/home/hanna/Projects/obey-testing-goat/virtualenv/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+FAILED (errors=1)
+(virtualenv) hanna@hanna-LIFEBOOK-S782:~/Projects/obey-testing-goat$  export PATH=$PATH:/home/hanna/Drivers
+(virtualenv) hanna@hanna-LIFEBOOK-S782:~/Projects/obey-testing-goat$ python functional_tests.py 
+F
+======================================================================
+FAIL: test_can_start_a_list_and_retrieve_it_later (__main__.NewVisitorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "functional_tests.py", line 44, in test_can_start_a_list_and_retrieve_it_later
+    "New to-do item did not appear in table"
+AssertionError: False is not true : New to-do item did not appear in table
+
+----------------------------------------------------------------------
+Ran 1 test in 4.282s
+
+FAILED (failures=1)
